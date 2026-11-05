@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <title>Hello, World!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I'm mohammed shahin ali, This for my first portfolio ">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body >
+  <header class=" sticky-top container mx-auto">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#">shahin ali</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarnav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="">skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <!-- <img id="image" class="rounded position-absolute" src="images/ph-1.jpg" alt="hgfg" width="100%" > -->
+
+  <main class="bg-info bg-opacity-60 container mx-auto ">
+    <div class="card w-80 m-3 bg-secondary">
+      <h1 class="align-items-center">This is My Portfolio</h1>
+    </div>
+    <div class="row gy-3 mx-1 ">
+      <div class="col-lg-4 ">
+        <section class="shadow p-2 card h-100 ">
+          <h2>About</h2>
+          <p>
+            Hello I am Mohammed Shahin ALi,
+            a passionate full stack Developer interested in creating
+            user friendly and responsive web application
+          </p>
+          <p>
+            Full-stack Developer with hand on experience building responsive web application using java,Springboot,
+            Angular, MySql,
+            Skilled in RESTful API Design, JWT based authuentication, layered architecture with DTO and containerzing
+            application with Github vertion control
+          </p>
+        </section>
+      </div>
+      <div class="col-lg-4  ">
+        <section class="shadow p-2 card h-100  ">
+          <h2>skills</h2>
+          <ul>
+            <li>java</li>
+            <li>springboot</li>
+            <li>Mysql</li>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>Angular</li>
+            <li>Github</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-lg-4 ">
+        <article id="myCarousel" class="shadow p-2 carousel slide  card h-100 ">
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Top controls</h5>
+            <div>
+              <button class="btn-icon btn-sm" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="btn-icon btn-sm" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <h3>Milk-in-Minutes</h3>
+              <ol>
+                <li> Milk-in-minutes is an online milk shopping web application where users can view product</li>
+                <li>search for product and add product to cart</li>
+                <li>Build a responsive shopping cart application using HTML, CSS and Angular for seamless user
+                  experience.</li>
+                <li>Implemented dynamic product listing and cart management, enableing user to browse, add, and remove
+                  product efficiently.</li>
+              </ol>
+              <p>Technologies used : HTML, CSS, javascript, and Angular</p>
+            </div>
+
+            <div class="carousel-item">
+              <h3>Kanban Board</h3>
+              <ol>
+                <li>Development a full-stack Kanban Board application using java, Angular, springboot, and MySql for
+                  task management.</li>
+                <li>Implement CRUD operation enabling users to create, update, and delete task across workflow stages.
+                </li>
+                <li>Built a dynamic, responsive UI with drag-and-drop functionality for seamless task organization.</li>
+                <li>Integrated Mysql for efficient storage and retrive of task data.</li>
+              </ol>
+              <p>Technologies used : HTML, CSS, javascript, and Angular,Java, springboot, MySql</p>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <div class=" d-flex ">
+      <div id="left" class="card w-100 m-2 p-2 bg-secondary">
+      <div class="progress">
+        <div class="progress-bar" style="width: 75%;"> 75%</div>
+      </div>
+      <div class="spinner-border" role="status"> <span class="visually-hidden">Loading...</span></div>
+    </div>
+
+    <div id="right" class="card w-100 m-2 p-2 bg-secondary">
+    <div class="progress">
+        <div class="progress-bar" style="width: 50%;"> 50%</div>
+      </div>
+      <div class="spinner-border" role="status"> <span class="visually-hidden">Loading...</span></div>
+    </div>
+
+    </div>
+  </main>
+
+  <footer class="container mx-auto  d-lg-flex justify-content-around bg-primary pt-3" >
+    <p>Email :<a class="text-dark" href="mailto:mohammedshahinali.kiaq@gmail.com">mohammedshahinali.kiaq@gmail.com</a></p>
+        <p><a class="text-dark" href="">LinkedIn</a></p>
+        <p><a class="text-dark" href="">Github</a></p>
+  </footer>
+</body>
+
+</html>

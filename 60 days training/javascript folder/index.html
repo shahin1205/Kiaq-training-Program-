@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm mohammed shahin ali, This for my first portfolio ">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <header class="container-flued d-flex justify-content-between align-items-center bg-secondary border rounded-4 sticky-top">
+        <div class="profile"><img  src="images/ph-2.jpg" class="rounded-pill mx-1" alt="" width="50" height="50"></div>
+        <h1>Mohammed shahin ali</h1>
+        <h3 >software development </h3>
+
+
+        <nav class="navbar navbar-expand-lg px-3 ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+            <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse gap-3" id="myNav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#project">Project</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </nav>
+        
+      </header>
+              <img id="image" class="rounded position-absolute" src="images/ph-1.jpg" alt="hgfg" width="100%" >
+
+      <main>
+        <section id="about" class="position-relative" >
+          <h2>About</h2>
+          <p>
+            Hello I am Mohammed Shahin ALi, 
+            a passionate full stack Developer interested in creating 
+            user friendly and responsive web application
+          </p>
+          <p>
+            Full-stack Developer with hand on experience building responsive web application using java,Springboot, Angular, MySql,
+             Skilled in RESTful API Design, JWT based authuentication, layered architecture with DTO and containerzing 
+             application with Github vertion control 
+          </p>
+          
+        </section>
+
+        <div class="content" >
+          <div class="left-content position-relative">
+        <section id="skills">
+        <h2>skills</h2>
+        <ul>
+          <li>java</li>
+          <li>springboot</li>
+          <li>Mysql</li>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+          <li>Angular</li>
+          <li>Github</li>
+        </ul>
+        </section>
+
+        <article id="project" >
+          
+          <h2 >Project</h2>
+          <div class="row">
+          <div class="col-6">
+          <h3>Milk-in-Minutes</h3>
+          <ol>
+           <li> Milk-in-minutes is an online milk shopping web application where users can view product</li>
+           <li>search for product and add product to cart</li>
+           <li>Build a responsive shopping cart application using HTML, CSS and Angular for seamless user experience.</li>
+            <li>Implemented dynamic product listing and cart management, enableing user to browse, add, and remove product efficiently.</li>            
+          </ol>
+          <p>Technologies used : HTML, CSS, javascript, and Angular</p>
+          
+          </div>
+          <div class="col-6">
+          <h3>Kanban Board</h3>
+          <ol>
+            <li>Development a full-stack Kanban Board application using java, Angular, springboot, and MySql for task management.</li>
+            <li>Implement CRUD operation enabling users to create, update, and delete task across workflow stages.</li>
+            <li>Built a dynamic, responsive UI with drag-and-drop functionality for seamless task organization.</li>
+            <li>Integrated Mysql for efficient storage and retrive of task data.</li>
+          </ol>
+          <p>Technologies used : HTML, CSS, javascript, and Angular,Java, springboot, MySql</p></div></div>
+        </article>
+        </div>
+
+        <div class="right-content position-relative container border border-dark rounded-4 mb-3" style="margin-top:10% ;">
+        <section id="contact"  >
+          <form action=""  >
+            <h3 style="background-color: red; ">contact US</h3>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter the name">
+            <br>
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" placeholder="Enter the email">
+            <br>
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="Enter phone number ">
+            <br>
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" placeholder="Enter Your location">
+            <br>
+            <label for="description" class="form-label">Description</label>
+            <br>
+            <textarea name="description" class="form-control" id="description" ></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary d-block mx-auto w-50 " onclick="alert('successfully submited')">submit</button>
+          </form>
+        </section>
+        </div>
+        </div>
+      </main>
+
+        <!-- <button onclick="window.location.href='contact.html'">contact</button> -->
+
+      <footer class="d-flex bg-info  justify-content-around align-items-center border rounded-5 ">
+        <p>Email :<a class="text-dark" href="mailto:mohammedshahinali.kiaq@gmail.com">mohammedshahinali.kiaq@gmail.com</a></p>
+        <p><a class="text-dark" href="">LinkedIn</a></p>
+        <p><a class="text-dark" href="">Github</a></p>
+      </footer>
+
+      
+  </body>
+</html>

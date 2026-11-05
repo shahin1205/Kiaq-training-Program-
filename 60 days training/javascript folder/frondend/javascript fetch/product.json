@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "ZtqppyNss2w",
+      "name": "shahin",
+      "price": "65",
+      "description": "i am good",
+      "img": ""
+    },
+    {
+      "id": "ABffRZjlrX8",
+      "name": "mahin",
+      "price": "87",
+      "description": "i am good",
+      "img": ""
+    },
+    {
+      "id": "ay1XQkJONgY",
+      "name": "raja",
+      "price": "78",
+      "description": "ytgyvty gk u",
+      "img": ""
+    },
+    {
+      "id": "gxFW9k9L9eo",
+      "name": "aravindh",
+      "price": "",
+      "description": "",
+      "img": ""
+    }
+  ],
+  "cartItems": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

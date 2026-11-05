@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm mohammed shahin ali, This for my first portfolio ">
+    
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <script src="app.js" defer></script>
+
+  </head>
+  <body class="bg-green-200">
+
+    <header class="container bg-gray-500 border rounded-3xl mx-auto sticky top-0 z-100 ">
+      
+        <nav class=" md:flex justify-between  items-center">
+          <!-- <div class="w-16 h-16 "><img class="rounded-full transition-transform duration-2000 hover:rotate-360 items-center" src="image/ph-1.jpg" alt=""></div> -->
+            <div class="text-center">
+                <h1 class="text-4xl m-2">Milk-in-Minutes</h1>
+            </div>
+            
+            <div class="">
+                <ul class="flex space-x-6 p-3 items-center">
+                  
+                <li>
+                  <form id="search" class="flex items-center mx-auto gap-2 bg-red-200 px-3">
+                  <input type="text" id="searchInput" placeholder="Item name">
+                  <button type="submit">search</button>
+                  </form></li>
+                <li>
+                  <button id="button" class="bg-blue-500 p-3 rounded-3xl">Add form</button>
+                </li>
+            </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div id="myform" class="container mx-auto w-100 bg-gray-500 border rounded-3xl p-3 mt-5 " style="display: none ;  ">
+      <form id="itemForm" class="flex flex-col w-full">
+        <label class="" for="itemName">Item Name</label>
+        <input class="border" id="itemName" type="text" placeholder="item name..." autocomplete="off">
+
+        <label class="" for="itemPrice">price</label>
+        <input class="border" id="itemPrice" type="text" placeholder="price..." autocomplete="off">
+
+         <label class="" for="description">Discription</label>
+        <input class="border" id="description" type="text" placeholder="Discription..." autocomplete="off">
+
+        <label class="" for="itemImg">ItemImage</label>
+        <input class="border" id="itemImg" type="text" placeholder="Image URL..." autocomplete="off">
+
+        <button class="bg-blue-500 mt-5 border rounded-3xl" type="submit">Add Item</button>
+      </form>
+      <p id="textMasseg"></p>
+      
+    </div>
+
+    <!-- <div>
+       <form id="search" class="flex items-center mx-auto gap-2">
+        <input type="text" id="searchInput" placeholder="Item name">
+        <button type="submit">search</button>
+       </form>
+    </div> -->
+
+    <main class="container mx-auto mt-5 mb-5   relative p-3">
+      <img class="absolute  h-full w-full inset-0 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3keMH36A_KwJK2kUA2yclpxl3d6R5kbOvLZza8U6I4Q&s=10" alt="">
+
+      <ul id="product-list" class=" grid grid-cols-2 md:grid-cols-4 mx-1 my-3 relative space-x-6 space-y-6" >
+
+        <!-- <li class="h-70  p-3 border border-gray-300 shadow-2xl overflow-hidden backdrop-blur-lg">
+          <img class="h-1/2 mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvZCu6TiRAuAsAcHxk6PSAHjW7Glc6-uNQAkJmuoP6w&s=10" alt="">
+        <h2 class="text-lg font-bold">Aavin Milk</h2>
+        <h3 class="text-lg font-bold">$32</h3>
+        <p>Aavin is the trademark of the Tamil Nadu Co-operative Milk Producers' Federation Limited, a state-government-run dairy cooperative in Tamil Nadu, India</p>
+        </li>
+
+        <li class="h-70  p-3 border border-gray-300 shadow-2xl overflow-hidden backdrop-blur-lg ">
+        <img class="h-1/2 mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbsWXMipC-DGbT6DHhLfDaYV-ZiSCkRduOlUUx4aTChg&s=10" alt="">
+        <h2 class="text-lg font-bold">Amul Butter</h2>
+        <h3 class="text-lg font-bold">$32</h3>
+        <p>Amul Butter is a popular, creamy pasteurized dairy product made from pure milk and cream</p>
+        </li>
+
+        <li class="h-70 p-3 border border-gray-300 shadow-2xl overflow-hidden backdrop-blur-lg ">
+        <img class="h-1/2 mx-auto" src="https://m.media-amazon.com/images/I/71NTI4D1M8L._AC_UF1000,1000_QL80_.jpg" alt="">
+        <h2 class="text-lg font-bold">Britannia cheese</h2>
+        <h3 class="text-lg font-bold">$32</h3>
+        <p>Made with the goodness of cow's milk, Britannia The Laughing Cow Cheese Block is a delicious, creamy block of cheese that you can cut, melt and grate to add cheesy flavours to food.</p>
+        </li>
+
+        <li class="h-70 p-3 border border-gray-300 shadow-2xl overflow-hidden backdrop-blur-lg ">
+        <img class="h-1/2 mx-auto" src="https://www.bbassets.com/media/uploads/p/l/40353698_1-hatsun-curd.jpg" alt="">
+        <h2 class="text-lg font-bold">Hatsun Curd</h2>
+        <h3 class="text-lg font-bold">$32</h3>
+        <p>Hatsun Curd is thick, creamy, and delicious, made from pure, farm-fresh milk. Naturally rich in taste and packed with probiotics, it supports digestion and overall wellness. Perfect for everyday meals,</p>
+        </li> -->
+      </ul>
+
+
+      
+    </main>
+
+    <section id="cart-items" class="items-center container mx-auto">
+      <table style="width:100%" id="cart-table">
+  <!-- <tr>
+    <th>Item name</th>
+    <th>price</th>
+    <th>quantati</th>
+  </tr> -->
+  
+  
+</table>
+    </section>
+    
+    <footer class="container mx-auto  button-0 relative text-white">
+      
+
+        <img class=" absolute inset-0 w-full h-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm10kkgvqXgmZpte2GHprA3Wbmk9aGZ57Njl2KOR8wKw&s=10" alt="">
+     
+      
+        <ul class="md:flex justify-between w-full relative">
+        <li>Email : <a class="text-dark" href="mailto:mohammedshahinali.kiaq@gmail.com">mohammedshahinali.kiaq@gmail.com</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">GitHub</a></li>
+      </ul>
+      
+      
+      
+      
+    </footer>
+  </body>
+</html>

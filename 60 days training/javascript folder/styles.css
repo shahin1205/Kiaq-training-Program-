@@ -1,0 +1,200 @@
+/* 
+
+
+html, body{
+    width: 100%;
+    overflow-x:hidden ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightslategray;
+    border-radius: 20px;
+    
+    position: sticky;
+    top: 0;
+    width: 100%;
+     z-index: 1000;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    transition: transform 3s;
+}
+.profile img:hover {
+    transform: rotate(360deg);
+    border-radius: 0px;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+header nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ;
+    display: inline-block;
+}
+header nav a:hover{
+    
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: brown;
+}
+#image{
+    position: absolute;
+    width: 100%;
+    
+    margin-top: 10px;
+}
+main .content{
+    display: flex;
+    width: 100%;
+   
+}
+
+main .right-content{
+    justify-content: flex-end;
+    width: 100%;
+    margin: 20px;
+}
+
+main .left-content{
+    margin-right: 1%;
+    
+}
+main #about{
+    position: relative;
+     
+}
+ main p, main pre,main li{
+    color:white;     
+}
+  main h2,main h3{
+    color:black;     
+}
+
+main #skills{
+    position: relative;
+}
+main #project{
+    position: relative;
+}
+main #contact label{
+    display: block;
+}
+
+
+ #contact{
+        
+    position: relative;
+    
+ }
+ 
+main #contact form{
+    background-color: white;
+    
+    
+}
+
+main #contact form input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: black;
+}
+main #contact form input[type=tel], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    border-color: black;
+
+}
+main #contact form textarea[name=description], select {
+  width: 80%;
+  padding: 25px;
+  margin: 8px 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    border-color: black;
+
+}
+main #contact form button[type=submit], select {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 45px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    border-color: black;
+    background-color: red;
+
+}
+
+main #contact form button:hover{
+    background-color: green;
+}
+
+footer{
+    display: flex;
+justify-content: space-around;
+margin: 20px;
+border-radius: 20px;
+position: relative;
+margin-top: 8%;
+}
+
+footer a,footer p{
+    color: black;
+}
+
+@media screen and (max-width:1300px) {
+
+    main .content{
+    display: block;
+   
+}
+
+#image{
+   display: none;
+}
+main .left-content{
+ background-color:steelblue;    
+}
+#contact{
+        position: unset;
+        
+ }
+ main .right-content{
+    
+    width: 50%;
+    margin: 20px;
+    
+}
+
+main #contact form{
+    background-color:blue;
+    /* margin-top: 50px; */
+    /* border-radius: 20px;
+}
+main{
+    background-color: purple;
+}
+}
+@media screen and (max-width:900px) {
+    header h1{
+    opacity: 0;
+}
+} */ 

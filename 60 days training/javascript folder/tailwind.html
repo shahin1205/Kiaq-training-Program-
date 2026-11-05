@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm mohammed shahin ali, This for my first portfolio ">
+    
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  </head>
+  <body>
+
+    <header class="container bg-gray-500 border rounded-3xl mx-auto sticky top-0 z-100">
+      
+        <nav class=" flex justify-between  items-center">
+          <div class="w-16 h-16"><img class="rounded-full transition-transform duration-2000 hover:rotate-360" src="images/ph-2.jpg" alt=""></div>
+            <div>
+                <h1 class="text-4xl m-2">Shahin ali</h1>
+            </div>
+            
+            <div >
+                <ul class="flex space-x-6 ">
+                <li><a class="hover:text-blue-300" href="">about</a></li>
+                <li><a class="hover:text-blue-300" href="">skills</a></li>
+                <li><a class="hover:text-blue-300" href="">contact</a></li>
+            </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="flex container mx-auto mt-6 relative">
+
+      <img class="absolute inset-0 w-full h-full object-cover" src="images/ph-1.jpg" alt="">
+
+      <div class="relative z-10 w-1/2 text-center space-y-6">
+         <h2 class="text-3xl ">About</h2>
+          <p class="">
+            Hello I am Mohammed Shahin ALi, 
+            a passionate full stack Developer interested in creating 
+            user friendly and responsive web application
+          </p>
+          <p class="hidden sm:block ">
+            Full-stack Developer with hand on experience building responsive web application using java,Springboot, Angular, MySql,
+             Skilled in RESTful API Design, JWT based authuentication, layered architecture with DTO and containerzing 
+             application with Github vertion control 
+          </p>
+      </div>
+      <div class="relative w-1/2 pt-15 px-5 md:p-10 ">
+        <img src="images/about.png" alt="">
+      </div>
+    </div>
+
+    <main class="mt-10">
+        <div class="container mx-auto md:grid  grid-cols-3 gap-4 space-y-6 md:space-y-0 bg-gray-500">
+          <div id="skills" class="h-auto p-3 border rounded-3xl border-red-500 bg-red-300   text-center md:flex md:flex-col items-center  ">
+            
+        <h2 class="text-3xl">skills</h2>
+        <ul>
+          <li>java</li>
+          <li>springboot</li>
+          <li>Mysql</li>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+          <li>Angular</li>
+          <li>Github</li>
+        </ul>
+          </div>
+          <div id="project-1"  class="p-3 border rounded-3xl border-red-500 h-auto bg-red-300">
+            <h3 class="font-bold text-lg">Milk-in-Minutes</h3>
+          <ol>
+           <li> Milk-in-minutes is an online milk shopping web application where users can view product</li>
+           <li>search for product and add product to cart</li>
+           <li>Build a responsive shopping cart application using HTML, CSS and Angular for seamless user experience.</li>
+            <li>Implemented dynamic product listing and cart management, enableing user to browse, add, and remove product efficiently.</li>            
+          </ol>
+          <p>Technologies used : HTML, CSS, javascript, and Angular</p>
+          
+          </div>
+          <div id="project-2" class="p-3 border rounded-3xl border-red-500 h-auto bg-red-300" >
+            <h3 class="font-bold text-lg">Kanban Board</h3>
+          <ol>
+            <li>Development a full-stack Kanban Board application using java, Angular, springboot, and MySql for task management.</li>
+            <li>Implement CRUD operation enabling users to create, update, and delete task across workflow stages.</li>
+            <li>Built a dynamic, responsive UI with drag-and-drop functionality for seamless task organization.</li>
+            <li>Integrated Mysql for efficient storage and retrive of task data.</li>
+          </ol>
+          <p>Technologies used : HTML, CSS, javascript, and Angular,Java, springboot, MySql</p>
+          </div>
+        </div>
+    </main>
+
+    <footer class="container mx-auto border rounded-2xl bg-gray-500 my-10 md:h-16 md:flex md:items-center ">
+      
+      <ul class="md:flex justify-between w-full">
+        <li>Email : <a class="text-dark" href="mailto:mohammedshahinali.kiaq@gmail.com">mohammedshahinali.kiaq@gmail.com</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">GitHub</a></li>
+      </ul>
+    </footer>
+
+
+
+
+
+
+    <div class="relative  " >
+
+      
+           <img class=" w-full  h-auto  " src="images/ph-1.jpg" alt="">
+      
+
+      <div class="absolute  inset-0 ">
+        <h1>
+          Titel
+        </h1>
+       <p>
+             Full-stack Developer with hand on experience building responsive web application using java,Springboot, Angular, MySql,
+             Skilled in RESTful API Design, JWT based authuentication, layered architecture with DTO and containerzing 
+             application with Github vertion control 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

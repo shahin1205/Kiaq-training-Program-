@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">shahin</h1>
+    <p>
+        JavaScript is a lightweight,
+        interpreted programming language primarily used to create dynamic and interactive features on web pages.
+    </p>
+    <button onclick="changeText()">click me</button>
+
+
+
+
+    <script>
+let change=false
+function changeText(){
+    
+    let element=document.getElementById("demo");
+
+   if(!change){
+    element.innerHTML="mahammed shahin";
+    change=true;
+   }
+   else{
+    element.innerHTML="shahin";
+    change=false;
+   }
+}
+</script>
+</body>
+
+</html>
