@@ -1,0 +1,7 @@
+.nave-bar{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
