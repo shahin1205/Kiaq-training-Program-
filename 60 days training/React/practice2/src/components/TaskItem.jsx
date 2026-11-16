@@ -15,7 +15,7 @@ function TaskItem({searchName}){
     
 
     const filterTask=taskItem.filter((item)=>{
-        if(searchName || String(searchName).trim()==="" ){
+        if(String(searchName).trim()==="" ){
             return true
         }
         if(!item || !item.taskName){

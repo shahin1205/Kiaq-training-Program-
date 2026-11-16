@@ -9,7 +9,7 @@ function Header({searchName}){
     return(
         <div className="nave-bar">
             <h1>To-DO-Task</h1>
-            <SearchTask setSearchQuery={searchName}/>
+            <SearchTask searchName={searchName}/>
         </div>
     );
 }
