@@ -1,6 +1,7 @@
 import { createContext, useState } from "react"
 import UserItem from "./UserItem";
 import { Link } from 'react-router-dom';
+import '../css/userForm.css'
 
 export const shareData=createContext();
 
@@ -49,7 +50,7 @@ function UserForm() {
         <button><Link to="UserList">User List</Link></button>
 
         
-            <form action="" onSubmit={addUser}>
+            <form action="" onSubmit={addUser} className="form">
                 <label htmlFor="name">Name</label>
                 <input id="name" type="text" placeholder="Name" value={name} onChange={(event) => setName(event.target.value)} />
 

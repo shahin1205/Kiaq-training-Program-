@@ -1,0 +1,184 @@
+install react project 
+-----------------------
+
+npm create vite@latest my-app -- --template react
+
+next enter yes
+
+next select Eslint
+
+next click yes
+
+after Install 
+-----------------
+cd my-react-app
+npm install
+npm run dev
+------------------------------------------------------------------
+
+React topics
+----------------
+
+what is Hooks
+Hooks are special function in React used to access React feature in function component 
+Hooks help us manage state, side effects, reference and share data bet
+
+1. useState
+   const [count, setCount] = useState(0) , const [count, setCount] = useState(""), const [count, setCount] = useState([])
+   const [count, setCount] = useState(null)
+  * it is used to store data in a component.
+  * it is used to update the data when needed.
+  * when state change, the component re-render. 
+
+2. props 
+   function child(props){
+    return <h1>{props.name}</h2>
+    }
+     <child name="Shahin" />
+
+   * props are used to pass data from parent component to child component.
+   * props are read-only; child component cannot direct modify them.
+   * props are suitable for passing data between component 
+
+3. useEffect -> useEffect(()=>{ ... },[])
+   * it is used to perform side effect in a component.
+   * it runs after the component renders, based on its dependencies.
+   * useEffect itself dose not cause a re-render, but updating state inside it can cause a re-render
+
+4. dynamic + conditional 
+5. Event Handling
+   * Event Handling is used to handle user interaction in react.
+   * It executes a function when an event occurs.
+   * React uses camelCase event name like onClick, onChange.
+    
+     Event Handling Type
+      onClick , onChange, onSubmit, onMouseOver, onMouseOut, onKeyDown, onFocus, onBlur, onDoubleClick
+
+     
+6. form & controlled Components
+7. List & keys
+   const names=["Apple" , "Banana", "Mongo"];
+    function App(){
+       return(
+          <ul>
+             {names.map((name, index) => (
+               <li key= {index} > {name} </li>
+          ))}
+          </ul>
+      ); }
+
+   * List is used to display multiple item using the map() method.
+   * key is used to uniquely identify each item in a list.
+   * key help React identify which items are added, remove or updated 
+
+8. Lifting state up
+               parent component
+      function App(){
+          const [name,setName]=useState("Shahin");
+        return(
+          <>
+            <Child1 name={name} />
+            <Child2 setName={setName} />
+           </>
+          );}
+                     child 1 component
+           function Child1({name}){
+             return <h1> {name} </h1>
+             }
+                       child 2 component
+           function child2({setName}){
+              return(
+                <button onclick={()=> setName("Hello Shahin")}>change Name</button>
+              );}
+          
+    * Lifting state up means moveing state from child component to its common parent component.
+    * it help multiple child components share and access the same state 
+9. component communication
+10. useRef
+     const inputRef = useRef(null);
+      <input ref={inputRef} />
+      <button onclick = { () => inputRef.current.focus()} > Focus </button>    
+
+    * it is used to store a mutable value in a component.
+    * changing the ref value dose not cause a component re-render.
+    * it is also used to access and counter dom element  
+
+11. context API
+                 parent component 
+       export const MyContext =createContext();
+        function App( ) {
+            return (
+               < MyContext.provider value ="Hello shahin">
+                    <Child /> 
+               </ MyContext.provider value ="Hello shahin">
+              );}
+
+                child Component 
+        function Child(){
+              const data= useContext(MyContext);
+              return <h1> {data} </h1>;
+            }
+    
+    * context is used to share data between multiple components.
+    * it avoids passing props through every intermediate component.
+    * Any component inside the context provider can access the share data
+
+12. React Router
+Router install cmd - npm install react-router-dom
+
+function Home() {
+  return <h1>Welcome to Home Page</h1>;
+}
+function About() {
+  return <h1>Welcome to About Page</h1>;
+}
+function App() {
+  return (
+    <BrowserRouter>
+
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+    </BrowserRouter>
+  );
+}
+
+     * React Routing is used to navigate between different pages in a React application.
+     * It allows users to move from one component to another without reloading the page.
+     * It is used to create multiple routes such as Home, About, Contact and Login.
+
+
+
+13. API integration
+json run cmd - npx json-server --watch db.json
+
+
+14.custom Hooks
+   * Custom Hooks are JavaScript functions created by developers to reuse stateful logic between multiple components.
+   * Custom Hook names must start with use (Example: useFetch, useCounter).
+            custom hook component
+       function useCounter() {
+          const [count, setCount] = useState(0);
+          const increment = () => {
+           setCount(count + 1);
+            };
+             return { count, increment };
+         }
+
+               App.jsx Component
+           function App() {
+              const { count, increment } = useCounter();
+
+                return (
+                  <>
+                 <h1>{count}</h1>
+                 <button onClick={increment}>Add</button>
+                   </>
+                    );
+             }
+

@@ -9,6 +9,11 @@
       "name": "mahin",
       "email": "shain@gmail.com",
       "id": "9ddK6Ad9t9k"
+    },
+    {
+      "name": "mahin",
+      "email": "shain@gmail.com",
+      "id": "hEiNd8IAmmg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react"
 import '../css/userList.css'
+import SearchUser from "./SearchUser"
 
 function UserList() {
 
     const [user, setUser] = useState([])
+    const [searchName, setSearchName]=useState("");
+
+    const filterUser=user.filter((user)=>{
+        if(searchName===""){
+            return true;
+        }
+        return user.name.toLowerCase().includes(searchName.toLowerCase().trim());
+    })
 
     useEffect(() => {
 
@@ -19,8 +28,12 @@ function UserList() {
 
 
     return (
-        <div className="user-list">
-            {!user?(<p>Loding...</p>):( user.map((user) => (
+
+        <>
+        
+            <SearchUser searchName={setSearchName}/>
+            <div className="user-list">
+            {!filterUser?(<p>Loding...</p>):( filterUser.map((user) => (
                 <div key={user.id}>
                     <h1>{user?.name}</h1>
                     <p>{user?.email}</p>
@@ -29,7 +42,8 @@ function UserList() {
                 </div>)
 
             ))}
-        </div>
+        </div></>
+        
     );
 }
 
