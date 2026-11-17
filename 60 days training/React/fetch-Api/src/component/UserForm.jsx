@@ -1,5 +1,4 @@
-import { createContext, use, useState } from "react"
-import UserList from "./UserList";
+import { createContext, useState } from "react"
 import UserItem from "./UserItem";
 import { Link } from 'react-router-dom';
 
